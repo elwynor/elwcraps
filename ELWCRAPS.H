@@ -1,0 +1,35 @@
+/*  Message-number definitions derived from "ELWCRAPS.MSG"  */
+
+#define CRAPKEY     1
+#define CRAPMSV     3
+#define MAX2BET     4
+#define MMENU       6
+#define SHMENU      7
+#define LOGIN       8
+#define CRINS       9
+#define ROLLIP     10
+#define YOUWIN     11
+#define YOULOSE    12
+#define ABORT      13
+#define NOTZER     14
+#define LEAVE      15
+#define NOGOOD     16
+#define NOTLIV     17
+#define CREDS      18
+#define GIVBET     19
+#define BADBET     20
+#define NOCREDS    21
+#define NOTENF     22
+#define DIE1       23
+#define DIE2       24
+#define DIE3       25
+#define DIE4       26
+#define DIE5       27
+#define DIE6       28
+#define DIETOT     29
+#define POINT      30
+#define UCRAPO     31
+#define HITKEY     32
+#define UGOTPT     33
+#define UGOT7      34
+#define NOTPT      35

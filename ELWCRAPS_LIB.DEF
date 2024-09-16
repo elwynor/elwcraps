@@ -1,0 +1,6 @@
+; Filename: ELWCRAPS_LIB.DEF
+LIBRARY ELWCRAPS.DLL
+; *** Visual Studio 2022 EXPORT ALIASES ONLY ***
+; Craps! - Copyright (c) 2024 Elwynor Technologies
+EXPORTS
+    init__elwcraps=_init__elwcraps	@1

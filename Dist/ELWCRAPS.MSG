@@ -1,0 +1,252 @@
+LEVEL3 {Elwynor Technologies: Craps}
+
+ If you want to limit access to Craps!, fill
+ this option in with the name of a key.  Only users
+ with this key will be allowed to play Craps!.
+ If you want everyone to be able to play this game,
+ leave this option blank.
+
+CRAPKEY {DEMO} S 15 Key required to play Craps!
+
+LEVEL4 {Elwynor Technologies: Craps}
+
+  If you want to display a message at user logon
+  pertaining to Craps!, set this option to YES.
+  You may then set the LOGIN text.
+
+CRAPMSV {Display Craps messages at logon? YES} B
+
+ You may wish to limit the amount of credits that
+ a user can bet per round in Craps!  The default
+ suggestion is 10000, but you may set this as 
+ high as 1000000.
+
+MAX2BET {Maximum bet in craps          : 10000} N 1 1000000
+
+LEVEL6 {Elwynor Technologies: Craps}
+
+
+MMENU {[1;37m
+         [34m===========
+         [32m$$ [1;37mCRAPS [32m$$
+         [34m===========
+
+[32m I [37m... Instructions
+[32m C [37m... Credits Available
+[32m P [37m... Play Craps
+[32m X [37m... Exit Craps
+
+[1;36mCRAPS!
+[1;37mChoose one of the above options: } T Craps Menu
+
+SHMENU {
+[1;36mCRAPS!
+[1;37mMake your selection ([32mI[1;37m,[32mC[1;37m,[32mP[1;37m,[32mX[1;37m, or [32m?[1;37m for help): } T Craps Short Menu
+
+LOGIN {} T Login Msg
+
+
+CRINS {
+                          [1;36mCRAPS!
+            [0;36m(C) 1989, 2004, 2024 Rick Hadsall
+[1;37m
+Our version of this popular casino game implements the [0;36mpass-line bet format[1;37m, 
+and allows you to bet credits on each game.
+
+The first roll is called the "[0;36mCome Out Roll[1;37m". If the sum of the two dice
+is either 7 or 11, [32myou win[1;37m - this is called a "[32mnatural[1;37m". However, if the
+sum of the dice is 2, 3, or 12, [31myou lose[1;37m - this is "[31mcraps[1;37m". If you get any
+other sum, that sum becomes your point and you move to the [0;36mpoint phase[1;37m.
+
+In the point phase, the goal is to roll the same point number again before
+you roll a total of 7. You will continue to roll until you either roll the
+point, in which case you [32mwin[1;37m, or a total of 7, in which case you "[31mseven out[1;37m"
+and lose your credit bet.
+
+[36mNOTE: We cannot reimburse you for credits you lost playing Craps![1;37m
+
+But above all, Have Fun! (And don't get addicted!)
+
+} T Craps instructions
+
+
+ROLLIP {
+[1;37m... [1;36mRolling the dice (Good Luck!!) [1;37m...
+} T Craps Roll in Progress
+
+
+YOUWIN {
+[1;32mCongratulations, %s! You win [1;37m%d [1;32mcredits![1;37m
+} T Craps win credits message
+
+
+YOULOSE {
+[1;32mSorry %s, you lost [1;37m%d [1;32mcredits...[1;37m
+} T Craps lose credits message
+
+
+ABORT {
+[1;37mWhat? Stakes too high for ya? (grin) Okay, exiting to Craps Menu...
+} T Abort Craps Bet
+
+
+NOTZER {
+[0;31mYou must bet at least 1 credit, but no more than [1;37m%d[0;31m....[1;37m
+} T Craps telling a user who entered 0 to try again
+
+
+LEAVE {
+[1;37mThanks for playing CRAPS %s!
+} T Exiting from Craps
+
+
+NOGOOD {
+[0;31mThat is not a Craps menu option.[1;37m
+} T Incorrect selection from menu
+
+
+NOTLIV {
+[0;31mSorry %s, but you do not have access to play this game.[1;37m
+} T Telling a user without access he/she cannot play
+
+
+CREDS {
+[1;36mYou currently have [1;37m%s [1;36mcredits remaining in your account.[1;37m
+} T Craps giving user credit total (option C)
+
+
+GIVBET {
+[1;37mEnter a credit bet from 1-%d credits:  } T Craps asking for bet
+
+
+BADBET {
+[0;31mSorry, that is an invalid bet. You must bet from 1-%d credits...[1;37m
+} T Telling user that he/she has to bet from 1 to 250 credits
+
+NOCREDS {
+[0;31mSorry, %s. You don't have any credits left in your account.[1;37m
+} T Telling a user that he/she has no credits left at all
+
+
+NOTENF {
+[0;31mYou don't have enough credits to bet that much. You only have [1;37m%s [0;31mleft.[1;37m
+
+Please try again or hit 'X' to abort...
+} T Telling a user that he/she bet more credits than he/she has
+
+
+DIE1 {[40m[1;37m
+[47m[1;30mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³         O         ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30mÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ[1;37m[40m
+} T The 1 Die
+
+
+DIE2 {[40m[1;37m
+[47m[1;30mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³  O                ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³                O  ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30mÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ[1;37m[40m
+} T The 2 Die
+
+
+DIE3 {[40m[1;37m
+[47m[1;30mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³  O                ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³         O         ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³                O  ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30mÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ[1;37m[40m
+} T The 3 Die
+
+
+DIE4 {[40m[1;37m
+[47m[1;30mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³  O             O  ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³  O             O  ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30mÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ[1;37m[40m
+} T The 4 Die
+
+
+DIE5 {[40m[1;37m
+[47m[1;30mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³  O             O  ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³         O         ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³  O             O  ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30mÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ[1;37m[40m
+} T The 5 Die
+
+
+DIE6 {[40m[1;37m
+[47m[1;30mÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³  O             O  ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³  O             O  ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30m³  O             O  ³[40m[1;37m
+[47m[1;30m³                   ³[40m[1;37m
+[47m[1;30mÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ[1;37m[40m
+} T The 6 Die
+
+
+DIETOT {
+[1;36mYou rolled [1;33m%d[1;36m.[1;37m
+} T Telling user what he/she rolled
+
+
+POINT {
+[1;36mSorry %s, you did not roll a 7 or 11, but you rolled a [1;33m%d[1;36m. This becomes
+your point and you must now roll it again to win.[1;37m
+} T Telling user their point
+
+
+UCRAPO {
+[1;31mSorry %s, but you crapped out.
+You lost your [1;37m%d [1;31mcredit bet.[1;37m
+} T Informing a user that they just crapped out
+
+
+HITKEY {
+[1;37m... [1;36mHit Enter to roll dice (Good Luck)[1;37m ...[1;37m
+} T Hit enter prompt
+
+
+UGOTPT {
+[1;32mCongratulations, %s! You rolled your point, so you WIN your [1;37m%d [1;32mcredit bet![1;37m
+} T Got the point
+
+
+UGOT7 {
+[1;31mSorry %s, but you rolled a 7.
+You lost your [1;37m%d [1;31mcredit bet.[1;37m
+} T rolled a 7 in point round
+
+
+NOTPT {
+[1;36mSorry %s, you did not roll your point. Try Again. Your point is [1;33m%d[1;36m.[1;37m
+} T not point.
+
